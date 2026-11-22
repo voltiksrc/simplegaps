@@ -4,19 +4,24 @@ A small patch for [dwl](https://codeberg.org/dwl/dwl) that adds configurable inn
 
 ## Compatibility
 
-Made for dwl v0.9. I haven't tested it on other versions.
+Supports dwl v0.9 and the current development version (`main`). I haven't tested it on older versions.
 
 ## Installation
 
-Clone dwl and switch to v0.9:
+Clone dwl:
 
 ```sh
 git clone https://codeberg.org/dwl/dwl.git
 cd dwl
+```
+
+If you want to use dwl v0.9 instead of the development version, run:
+
+```sh
 git checkout v0.9
 ```
 
-Download `simplegaps.patch`, place it in the dwl directory, and apply it:
+Download the appropriate `simplegaps.patch` for your version, place it in the dwl directory, and apply it:
 
 ```sh
 git apply simplegaps.patch

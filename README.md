@@ -50,6 +50,18 @@ static const int gappx = 12;
 
 Just change `12` to whatever you want and recompile.
 
+### Smart gaps
+
+The patch also supports smart gaps, which remove the outer gaps when there's only one window open.
+
+You can enable or disable them in `config.h`:
+
+```c
+static const int smartgaps = 1;
+```
+
+Set it to `1` to enable smart gaps or `0` to disable them, then recompile.
+
 ## Limitations
 
 Right now, gaps only work with the default `tile()` layout. Other layouts aren't supported yet.
